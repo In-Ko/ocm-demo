@@ -14,7 +14,7 @@
 workDir="ocm-component"
 compName="github.com/acme/podinfo"
 compVersion="v1.0.0"
-GH_PAT=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
+GH_PAT=xxx
 GH_USER=In-Ko
 GH_USER_LC=in-ko
 
