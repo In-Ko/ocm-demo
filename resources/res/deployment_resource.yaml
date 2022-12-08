@@ -1,0 +1,7 @@
+name: deployment
+version: v1.0.0
+type: localBlob
+input:
+  type: file
+  path: ./deployment.yaml
+  compress: true
