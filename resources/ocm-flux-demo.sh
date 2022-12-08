@@ -2,10 +2,9 @@
 
 
 # IMPORTANT NOTES for Demo:
-# Script MUST be started from a empty dir via this command: "sh ../ocmDemo/ocm-flux-demo.sh"
+# Script MUST be started from a empty dir via this command: "sh ../ocmDemo/ocm-flux-demo.sh", so from a "sibling" directory to the ocmDemo dir.
 # demoDir must be completely empty
 # demoDownloadDir must be completely empty
-
 
 # Prep 
 . ../ocmDemo/demo-helper.sh
@@ -14,9 +13,9 @@
 workDir="ocm-component"
 compName="github.com/acme/podinfo"
 compVersion="v1.0.0"
-GH_PAT=xxx
-GH_USER=In-Ko
-GH_USER_LC=in-ko
+GH_PAT=xxxxxx (add a PAT here to access your github docker package repository)
+GH_USER=xxxx (add your github user id here) 
+GH_USER_LC=xxxx (in case your github user has some uppercase letters, add here a lower case version. Reason: OCI does not accept upper cases)
 
 # Start
 clear
