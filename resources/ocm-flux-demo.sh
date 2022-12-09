@@ -7,7 +7,7 @@
 # demoDownloadDir must be completely empty
 
 # Prep 
-. ../ocmDemo/demo-helper.sh
+. ../resources/demo-helper.sh
 
 # Declare some constants
 workDir="ocm-component"
@@ -61,12 +61,12 @@ wait
 echo " "
 echoDescr "We can add resources to the componentarchive using yaml files.
 Let's use one for the podinfo docker image."
-command="cat ../../ocmDemo/res/image_resource.yaml"
+command="cat ../../resources/res/image_resource.yaml"
 pe "$command"
 
 echo " "
 echo " "
-command="ocm add resource ./component-archive ../../ocmDemo/res/image_resource.yaml"
+command="ocm add resource ./component-archive ../../resources/res/image_resource.yaml"
 pe "$command"
 
 
@@ -88,19 +88,19 @@ pe "$command"
 echo " "
 echoDescr "Now let's add another resource.\n
 This time a local YAML file, which looks like this:"
-command="cat ../../ocmDemo/res/deployment.yaml"
+command="cat ../../resources/res/deployment.yaml"
 pe "$command"
 
 # check the corresponding resource file
 echo " "
 echo " "
 echoDescr "This is how the corresponding resource file looks like:"
-command="cat ../../ocmDemo/res/deployment_resource.yaml"
+command="cat ../../resources/res/deployment_resource.yaml"
 pe "$command"
 
 echo " "
 echo " "
-command="ocm add resource ./component-archive ../../ocmDemo/res/deployment_resource.yaml"
+command="ocm add resource ./component-archive ../../resources/res/deployment_resource.yaml"
 pe "$command"
 
 # OCM CLI to check if resource has been added
