@@ -2,7 +2,7 @@
 
 
 # IMPORTANT NOTES for Demo:
-# Script MUST be started from a empty dir via this command: "sh ../ocmDemo/ocm-flux-demo.sh", so from a "sibling" directory to the ocmDemo dir.
+# Script MUST be started from a empty dir via this command: "sh ../resources/ocm-flux-demo.sh", so from a "sibling" directory to the 'resources' dir of this repo.
 # demoDir must be completely empty
 # demoDownloadDir must be completely empty
 
